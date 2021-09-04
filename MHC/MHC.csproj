@@ -1,7 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>MetaHash.NET</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Company>MHC.ZONE</Company>
+    <Authors>Jonas Van der Biest</Authors>
+    <PackageTags>metahash mhc crypto blockchain tracechain</PackageTags>
+    <Description>MetaHash crypto library for .NET implementation</Description>
+    <RepositoryUrl>https://github.com/jvanderbiest/MetaHash.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

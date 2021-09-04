@@ -6,12 +6,12 @@ using NUnit.Framework;
 namespace MHC.Tests
 {
     [TestFixture]
-    public class Class1
+    public class WalletTests
     {
         [Test]
         public void CreateWalletAddress_ShouldReturnAddress()
         {
-            var wallet = MHC.Utilities.CreateWalletAddress();
+            var wallet = new Wallet();
             Assert.NotNull(wallet);
             Assert.IsNotEmpty(wallet.Address);
             Assert.IsNotEmpty(wallet.PrivateKey);
@@ -23,7 +23,7 @@ namespace MHC.Tests
         [Test]
         public async Task SendTx()
         {
-            var client = new MetaHashClient();
+            var client = new Client();
             var privateKey = "";
             var wallet = new Wallet(privateKey);
             string data = "some data";

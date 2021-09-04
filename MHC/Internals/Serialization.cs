@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net;
 using Org.BouncyCastle.Utilities.Encoders;
 
-namespace MHC
+namespace MHC.Internals
 {
     /// <summary>
     /// MetaHash encoding implementation
