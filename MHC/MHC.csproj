@@ -4,7 +4,7 @@
     <PackageId>MetaHash.NET</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
     <Company>MHC.ZONE</Company>
     <Authors>Jonas Van der Biest</Authors>
     <PackageTags>metahash mhc crypto blockchain tracechain</PackageTags>

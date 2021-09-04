@@ -10,8 +10,9 @@ using MHC.Domain;
 var wallet = new Wallet();
 ```
 
-Load wallet from private key and calculate address and public key
-Load wallet from address, private and public key
+- Generate wallet on the fly
+- Load existing wallet from private key and calculate address and public key
+- Load existing wallet from address, private and public key
 
 ## MetaHash client
 ### Initialize default
