@@ -7,6 +7,11 @@
             Method = "get-tx";
         }
 
+        public TransactionRequestParams Params { get; set; }
+    }
+
+    public class TransactionRequestParams
+    {
         public string Hash { get; set; }
     }
 }

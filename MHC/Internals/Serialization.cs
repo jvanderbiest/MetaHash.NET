@@ -105,7 +105,7 @@ namespace MHC.Internals
         /// </summary>
         public static byte[] Encode(string to, decimal value, decimal fee, int nonce, string data)
         {
-            // following field values are given for signature: to, value, fee, nonce, data counter, data
+            // following field values are given for signature: to, value, fee, nonce,  data
             byte[] encoded = Hex.Decode(to.Substring(2));
             encoded = encoded.
                 Concat(Encode(value)).

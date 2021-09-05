@@ -71,17 +71,5 @@ namespace MHC.Domain
                 return _publicKeyRaw = Crypto.ParsePublicKey(PublicKey);
             }
         }
-        
-        /// <summary>
-        /// Signs the data with the private key
-        /// </summary>
-        /// <param name="data">The data field to sign</param>
-        /// <returns></returns>
-        public string Sign(string data)
-        {
-            byte[] bytes = Encoding.UTF8.GetBytes(data);
-            var signature = Crypto.Sign(bytes, PrivateKey);
-            return signature;
-        }
     }
 }

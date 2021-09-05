@@ -244,7 +244,7 @@ namespace MHC.Internals
 		/// </summary>
 		public static string GetAddress(string publicKey)
 		{
-			byte[] bytes = bytes = RipeMD160Hash(Sha256Hash(ParsePublicKey(publicKey)));
+			byte[] bytes = RipeMD160Hash(Sha256Hash(ParsePublicKey(publicKey)));
 			byte[] ripemd = new byte[] { 0x00 }.Concat(bytes).ToArray();
 			bytes = ripemd.Concat(Sha256Hash(Sha256Hash(ripemd)).Take(4)).ToArray();
 			return "0x" + Hex.ToHexString(bytes);

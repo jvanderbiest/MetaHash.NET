@@ -7,6 +7,11 @@
             Method = "fetch-history";
         }
 
+        public FetchHistoryRequestParams Params { get; set; }
+    }
+
+    public class FetchHistoryRequestParams
+    {
         /// <summary>
         /// The address of the wallet to get the history from
         /// </summary>

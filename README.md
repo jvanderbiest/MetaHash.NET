@@ -21,9 +21,11 @@ using MHC;
 var client = new Client();
 ```
 
-- Send transactions
+- Transfer MHC
 - Get transaction
 - Fetch history
+- Fetch balance
+- Verify transaction
 
 ## Internals
 To access the base cryptography, use MHC.Internals
